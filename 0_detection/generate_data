@@ -1,0 +1,10 @@
+python3 get_csv.py -i data_$1/images/train -o data_$1/annotations/train_labels.csv -l data_$1/annotations
+python get_csv.py -i data_$1/images/test -o data_$1/annotations/test_labels.csv
+cp -a data_$1/ models/research/data/
+cp -a generate_tfrecord.py models/research
+cd models/research
+protoc object_detection/protos/*.proto --python_out=.
+python3  generate_tfrecord.py --csv_input=data/annotations/train_labels.csv --output_path=data/annotations/train.record --img_path=data/images/train --label_map data/annotations/label_map.pbtxt
+python3  generate_tfrecord.py --csv_input=data/annotations/test_labels.csv --output_path=data/annotations/test.record --img_path=data/images/test --label_map data/annotations/label_map.pbtxt
+cp -r  data/. ../../final_data_$1
+rm -r  data/*
