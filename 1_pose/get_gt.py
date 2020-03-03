@@ -1,19 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Thu Jun  6 18:04:44 2019
-
-@author: franciscapessanha
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Mon May 27 09:30:06 2019
-
-@author: franciscapessanha
-"""
-
 #%%
 ###############################################################################
 #                                  IMPORTS

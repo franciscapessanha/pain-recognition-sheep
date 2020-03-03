@@ -160,10 +160,6 @@ train, test = get_cross_val()
 #         SAVE FOLD - SAVE IMAGES AND INFORMATION OF A FOLD FOR TRAINING
 ###############################################################################
 
-#def save_folds(train, test, folds):
-#train, test = get_cross_val()  
-#def save_folds(train, test, folds):
-
 folds = [0,1,2,3,4]
 for f in folds:
     fold = '%0d' % f 
