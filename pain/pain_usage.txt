@@ -1,0 +1,15 @@
+Pain Estimation
+==================================
+* train_SVM.py: will train a SVM model for each fold
+    - a nested cross validation was made to select the hyperparameters
+    - the images from the same video are in the same group (test, validation or train)
+    - all faces were flipped according to there absolute yaw value
+
+* HOGs_features.py: collect the HOG features 
+
+* geometric_features.py: collect the geometric features
+
+Requirements
+-------------------
+* sklearn
+* opencv-python

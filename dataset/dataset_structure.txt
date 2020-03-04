@@ -1,0 +1,20 @@
+Dataset structure
+======================
+* "data": full dataset divided intro the 4 subsets
+    - farm
+    - flickr
+    - mixed
+    - wsid
+
+* "pose_lms_info": includes the faces oriented according to their absolute yaw and the pose and landmark information for each of the subsets
+
+* "illness": videos from known ill sheep organized in folders according to their ID
+
+* "scored": information regarding the pain score and the "first_frames" dataset with images extracted from short videos (one for each short 1 second clip)
+
+* "video_annotations": 
+    - clips: 1 second clips extracted from several videos
+    - first_frames: first frames of each of this clips
+    - pain: pain score associated
+    - txt: beginning and end of each clip as well as a first annotation of pain score
+
